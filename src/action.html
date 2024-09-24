@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create or Join Meeting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,0" />
+    <link rel="stylesheet" href="public/Assets/css/style.css">
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body class="bg-slate-50">
+    <nav class="container flex items-center py-2 gap-x-8 w-full">
+        <div class="flex justify-center gap-x-2 p-2 items-center cursor-pointer w-52 hover:bg-slate-100 rounded-sm">
+            <img src="/public/Assets/images/google-meet-icon.png" class="h-6" alt="logo" />
+            <a class="font-medium text-xl rounded-sm">Google Meet</a>
+        </div>
+        <div class="flex items-center justify-between w-full">
+            <ul class="flex">
+                <li>
+                    <a href="#"
+                        class="no-underline cursor-pointer p-2 hover:bg-slate-100 rounded-sm text-sm font-semibold text-gray-500">At
+                        a glance</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="no-underline cursor-pointer p-2 hover:bg-slate-100 rounded-sm text-sm font-semibold text-gray-500">How
+                        it works</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="no-underline cursor-pointer p-2 hover:bg-slate-100 rounded-sm text-sm font-semibold text-gray-500">Plan
+                        and Price</a>
+                </li>
+            </ul>
+            <ul class="flex gap-x-4">
+                <li class="">
+                    <button
+                        class="p-2 hover:bg-slate-100 hover:text-gray-600 rounded-sm text-sm font-semibold text-gray-500">Sign
+                        in</button>
+                </li>
+                <li class="">
+                    <button
+                        class="join-meeting p-2 hover:bg-slate-100 rounded-sm text-sm font-bold text-cyan-600 outline outline-1">Join
+                        the Meeting</button>
+                </li>
+                <li class="">
+                    <button class="p-2 hover:bg-cyan-700 rounded-sm text-sm font-bold text-white bg-cyan-600">Start
+                        a Meeting</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main class="p-10">
+        <div class="flex">
+            <div class="container w-1/2">
+                <h1 class="font-semibold md:text-7xl text-4xl">Premium video meeting. Now available for free.</h1>
+                <p class="py-4 text-lg">We're redesigning the Google Meet service for secure business meetings and
+                    making it free for everyone to use.</p>
+                <div class="flex gap-x-4">
+                    <button
+                        class="bg-teal-700 hover:bg-teal-800 text-white font-semibold text-lg p-2 rounded-sm flex items-center gap-x-2">
+                        <span class="material-symbols-outlined">videocam</span>
+                        <span>New Meeting</span>
+                    </button>
+                    <!-- <div
+                        class="flex items-center gap-x-2 border border-gray-800 focus-within:bg-red-500 focus-within:border-2 focus-within:border-gray-900 rounded-sm px-2">
+                        <span class="material-symbols-outlined">keyboard</span>
+                        <input class="enter-code border-none outline-none bg-transparent" placeholder="Enter a code" />
+                    </div> -->
+                    <div
+                        class="flex items-center gap-x-2 focus-within:border-2 focus-within:border-gray-900 border border-gray-800  rounded-sm px-2">
+                        <span class="material-symbols-outlined">keyboard</span>
+                        <input class="enter-code border-none outline-none bg-transparent" placeholder="Enter a code" />
+                    </div>
+
+                    <button class="font-bold text-lg text-gray-600 hover:text-gray-800 rounded-sm">Join</button>
+                </div>
+            </div>
+            <div class=" container w-1/2">
+                <img src="/public/Assets/images/video-call.jpg" alt="video call depicted image" />
+            </div>
+        </div>
+    </main>
+    <footer class="fixed bottom-0 w-full flex justify-center">
+        <div class="flex gap-x-4 text-sm">
+            <p>Image by <a
+                    href="https://www.freepik.com/free-vector/flat-online-medical-conference_12982213.htm#query=google%20meet%20background&position=0&from_view=keyword&track=ais_hybrid&uuid=3bd75faf-f33a-4ee3-87fa-1e52e967de47"
+                    class="underline">Freepik</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $(document).on("click", ".join-meeting", function () {
+                $(".enter-code").focus();
+            })
+        })
+    </script>
+</body>
+
+</html>
